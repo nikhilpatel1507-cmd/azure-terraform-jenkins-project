@@ -7,7 +7,8 @@ pipeline {
     }
 
     environment {
-        TF_IN_AUTOMATION = 'true'
+ 
+       TF_IN_AUTOMATION = 'true'
         TF_INPUT          = 'false'
         // Populate these via Jenkins Credentials (Manage Jenkins > Credentials), never hardcode:
         // AZURE_SUBSCRIPTION_ID, AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_SECRET
@@ -15,7 +16,8 @@ pipeline {
         ARM_TENANT_ID       = credentials('azure-tenant-id')
         ARM_CLIENT_ID       = credentials('azure-client-id')
         ARM_CLIENT_SECRET   = credentials('azure-client-secret')
-    }
+       TF_VAR_ssh_public_key = credentials('ssh-public-key') 
+}
 
     stages {
 
