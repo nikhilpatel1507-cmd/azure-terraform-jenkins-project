@@ -1,0 +1,26 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan-*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Secrets
+*.tfvars
+!*.tfvars.example
+
+# SSH keys accidentally dropped into the repo
+*_rsa
+*_rsa.pub
+
+# OS/editor cruft
+.DS_Store
+.vscode/
