@@ -1,14 +1,14 @@
 module "networking" {
   source = "../../modules/networking"
 
-  project             = var.project
-  environment         = var.environment
-  location            = var.location
-  vnet_address_space  = var.vnet_address_space
-  app_subnet_prefix   = var.app_subnet_prefix
-  db_subnet_prefix    = var.db_subnet_prefix
-  admin_source_cidr   = var.admin_source_cidr
-  tags                = var.tags
+  project            = var.project
+  environment        = var.environment
+  location           = var.location
+  vnet_address_space = var.vnet_address_space
+  app_subnet_prefix  = var.app_subnet_prefix
+  db_subnet_prefix   = var.db_subnet_prefix
+  admin_source_cidr  = var.admin_source_cidr
+  tags               = var.tags
 }
 
 module "keyvault" {

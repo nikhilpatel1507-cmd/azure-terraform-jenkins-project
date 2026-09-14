@@ -9,7 +9,7 @@ resource "azurerm_key_vault" "kv" {
   soft_delete_retention_days = 7
   purge_protection_enabled   = false
   tags                       = var.tags
-rbac_authorization_enabled = false
+  rbac_authorization_enabled = false
 }
 
 resource "azurerm_key_vault_access_policy" "terraform_runner" {
