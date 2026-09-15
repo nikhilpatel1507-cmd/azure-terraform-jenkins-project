@@ -13,8 +13,8 @@ module "networking" {
 
 
 module "database" {
-  source = "../../modules/database"
-admin_password = var.db_admin_password
+  source              = "../../modules/database"
+  admin_password      = var.db_admin_password
   project             = var.project
   environment         = var.environment
   location            = var.location
