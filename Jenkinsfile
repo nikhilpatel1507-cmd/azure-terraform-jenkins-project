@@ -17,6 +17,8 @@ pipeline {
         ARM_CLIENT_ID       = credentials('azure-client-id')
         ARM_CLIENT_SECRET   = credentials('azure-client-secret')
        TF_VAR_ssh_public_key = credentials('ssh-public-key') 
+      TF_VAR_db_admin_password = credentials('db-admin-password')
+
 }
 
     stages {

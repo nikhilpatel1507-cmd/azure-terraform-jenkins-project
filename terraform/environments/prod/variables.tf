@@ -3,6 +3,13 @@ variable "project" {
   default = "devopsdemo"
 }
 
+
+variable "db_admin_password" {
+  description = "Admin password for the PostgreSQL Flexible Server"
+  type        = string
+  sensitive   = true
+}
+
 variable "environment" {
   type    = string
   default = "prod"
