@@ -22,7 +22,6 @@ module "database" {
   vnet_id             = module.networking.vnet_id
   db_subnet_id        = module.networking.db_subnet_id
   sku_name            = var.db_sku_name
-  admin_password      = module.keyvault.db_admin_password
   tags                = var.tags
 }
 

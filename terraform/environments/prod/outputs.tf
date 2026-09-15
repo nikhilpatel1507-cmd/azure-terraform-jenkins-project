@@ -6,6 +6,3 @@ output "db_server_fqdn" {
   value = module.database.server_fqdn
 }
 
-output "key_vault_id" {
-  value = module.keyvault.key_vault_id
-}
