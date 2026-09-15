@@ -11,15 +11,6 @@ module "networking" {
   tags               = var.tags
 }
 
-module "keyvault" {
-  source = "../../modules/keyvault"
-
-  project             = var.project
-  environment         = var.environment
-  location            = var.location
-  resource_group_name = module.networking.resource_group_name
-  tags                = var.tags
-}
 
 module "database" {
   source = "../../modules/database"
